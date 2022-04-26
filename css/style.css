@@ -1,0 +1,165 @@
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:#0C0605;
+	background-image:url(../img/howc.png);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:top center;
+	color:#F7043;
+	font-family:Helvetica;
+	font-size:16px;
+}
+
+input{
+	width:250px;
+	height:30px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+button{
+	width:250px;
+	height:60px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+h1{
+	font-size:45px;	
+}
+
+h2{
+	font-size:20px;
+	color:#BBBBBB;
+}
+
+legend{
+	text-align:left;
+	color:#FF5722;
+	font-size:16px;
+}
+
+#header{
+	text-align:center;
+	background:transparent;
+	color:#FF7043;
+	font-weight:bold;
+	margin:10px;
+	padding:10px;
+}
+
+#table1{
+	width:100%;
+}
+
+#layer1{
+	background:#0C0605;
+	padding-top:20px;
+	overflow:auto;
+	text-align:center;
+}
+
+#target, #hiveURL, #requests, #msg{
+	color:#ffffff;
+	background:#D35400;
+	border-style:solid;
+	border-width:1px;
+	border-color:#E59866;
+	width:50%;
+	margin-bottom:7px;
+}
+
+#start{
+	color:#ffffff;
+	background:#A04000;
+	width:250px;
+	height:70px;
+	border-style:solid;
+	border-width:2px;
+	border-top-color:#E59866;
+	border-left-color:#E59866;
+	border-bottom-color:#000000;
+	border-right-color:#000000;
+}
+
+#start:active{
+	border-top-color:#000000;
+	border-left-color:#000000;
+	border-bottom-color:#5696C0;
+	border-right-color:#5696C0;
+}
+
+#hivebutton{
+	color:#ffffff;
+	background:#A04000;
+	font-size:13px;
+	width:90px;
+	height:30px;
+	border-style:solid;
+	border-width:2px;
+	border-top-color:#E59866;
+	border-left-color:#E59866;
+	border-bottom-color:#000000;
+	border-right-color:#000000;
+}
+
+#hivebutton:active{
+	border-top-color:#000000;
+	border-left-color:#000000;
+	border-bottom-color:#5696C0;
+	border-right-color:#5696C0;
+}
+
+#footer{
+	text-align:center;
+	color:#CCCCCC;
+	font-size:10px;
+	font-style:italic;
+	margin:0px;
+	padding:0px;
+}
+
+#counter_tail{
+	color:#FF5722;
+}
+
+#counter_requested{
+	color:#39BD15;
+	font-family:Helvetica;
+	font-size:47px;
+	font-weight:bold;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+
+.layer2{
+	background:#0C0605;
+	margin:10px;
+	padding:10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#E59866;
+	text-align:center;
+}
+
+.title{
+	color:#FF5722;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px;
+}
+
+.number{
+	color:#363635;
+	font-family:Helvetica;
+	font-size:10px;
+	font-weight:bold;
+}
+
+.hidde{
+	display:none;
+}

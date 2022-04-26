@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sp">
+
+<!-- Mirrored from hoic.ga/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 11:50:39 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+	<title>HOWC (High Orbit Web Cannon)</title>
+	
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/mb.slider.css" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mb.slider.js"></script>
+	<script type="text/javascript" src="js/jquery.metadata.js"></script>
+	<script type="text/javascript" src="js/engine.js"></script>
+	<script type="text/javascript"> 
+		$(function(){			
+			$("#ex0 .mb_slider").mbSlider({
+				onSlide:function(o){$("#"+o.id+"_val").find(".val").val($(o).mbgetVal());move_slide();},
+			});
+			$("#ex1 .mb_slider").mbSlider({
+				onSlide:function(o){$("#"+o.id+"_val").find(".val").val($(o).mbgetVal());},
+			});
+		});
+	</script>
+	<script language="JavaScript" Type="text/javascript">
+<!--
+function popupMsg(theMsg) {
+alert(theMsg);
+}
+//-->
+</script>
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+	<div id="hiveContainer" class="hidde"></div>
+	<div id="header">
+		<h1>HOWC</h1>
+		<h2>(High Orbit Web Cannon)</h2>
+	</div>
+	<div id="layer1">
+		<table id="table1">
+			<tr>
+				<td>
+					<fieldset class="layer2">
+						<legend>1. Select your target</legend>
+						<input type="text" id="target" value="http://lincolnproject.us" />
+					</fieldset>
+				</td>
+				<td>
+					<fieldset class="layer2">
+						<legend>HiveMind (optional)</legend>
+						<input type="button" id="hivebutton" onclick="load_hive();" value="Load data" />
+						<input type="text" id="hiveURL" value="" />
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset class="layer2">
+						<legend>2. Attack options (caution!)</legend>
+						<div class="title">Interval (ms):</div>
+						<div id="ex0">
+							<div id="sl0" class="mb_slider {maxVal:'1000', rangeColor:'#5696C0',negativeColor:'#183040', startAt:100, grid:1}" style="display:inline-block;*display:inherit;"></div>
+						</div>
+						<!--La funci贸n de atacar varias veces en la misma unidad de tiempo est谩 actualmente desactivada.
+						<div class="title">Request at same time:</div>
+						<div id="ex1">
+							<div id="sl1" class="mb_slider {maxVal:'100', rangeColor:'#5696C0',negativeColor:'#183040', startAt:1, grid:1}" style="display:inline-block;*display:inherit;"></div>
+						</div>
+						-->
+						<div class="title">Append Message:</div>
+						<input type="text" id="msg" value="We are Anonymous" />
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1">
+					<fieldset class="layer2">
+						<legend>3. Ready?</legend>
+						<input type="button" id="start" onclick="start_stop();" value="IMMA CHARGING" />
+						<span id="sl0_val" class="setVal"><input type="hidden" id="interval" class="val" value="100" /></span>
+						<span id="sl1_val" class="setVal"><input type="hidden" id="calibre" class="val" value="1" /></span>
+					</fieldset>
+				</td>
+				<td>
+					<fieldset class="layer2">
+						<legend>Attack status</legend>
+						<div class="number"><p id="counter_requested">0</p>of <span id="counter_tail">0</span></div>
+						<div class="hidde" id="state">stop</div>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<p id="footer">Designed by ~Anon~ | <a href= "http://loic.ga/">Low Orbit Web Cannon</a></p>
+	<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+
+var message="Nope";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+</body>
+
+<!-- Mirrored from hoic.ga/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 11:50:41 GMT -->
+</html>
